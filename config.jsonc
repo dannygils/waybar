@@ -1,0 +1,106 @@
+{
+  "layer": "top",
+  "position": "top",
+  "height": 32,
+
+  "modules-left": ["hyprland/workspaces", "hyprland/window", "hyprland/submap"],
+  "modules-center": ["custom/shortcuts", "clock", "custom/firefox", "custom/steam", "custom/plex", "custom/signal"],
+  "modules-right": ["pulseaudio", "network", "custom/power", "tray"],
+
+  // Workspaces from Hyprland
+  "hyprland/workspaces": {
+    "format": "{name}",
+    "on-click": "activate",
+    "all-outputs": true
+  },
+
+  // Active window title
+  "hyprland/window": {
+    "format": "{}",
+    "max-length": 80
+  },
+
+  // Current Hyprland submap (keybind mode)
+  "hyprland/submap": {
+    "format": "  {name}",
+    "max-length": 20,
+    "tooltip": false
+  },
+
+  // Center clock (e.g. 2026-01-28 - Wednesday - 21:56)
+  "clock": {
+    "format": "{:%Y-%m-%d - %A - %H:%M}",
+    "tooltip": false
+  },
+
+  // Network status with live bandwidth in label
+  "network": {
+    "interval": 1,
+    "format": "{ifname}",
+    "format-ethernet": "  {ifname}  {bandwidthDownBytes}  {bandwidthUpBytes}",
+    "format-wifi": "  {essid}  {bandwidthDownBytes}  {bandwidthUpBytes}",
+    "format-disconnected": "  offline",
+    "max-length": 60
+  },
+
+  // App launchers
+  "custom/firefox": {
+    "format": "",
+    "tooltip": "Firefox",
+    "on-click": "firefox",
+    "interval": 0
+  },
+
+  "custom/steam": {
+    "format": "",
+    "tooltip": "Steam",
+    "on-click": "steam",
+    "interval": 0
+  },
+
+  "custom/plex": {
+    "format": "󰚺",
+    "tooltip": false,
+    "on-click": "plex-desktop",
+    "interval": 0
+  },
+
+  "custom/signal": {
+    "format": "󰵅",
+    "tooltip": "Signal",
+    "on-click": "signal-desktop --password-store=\"gnome-libsecret\"",
+    "interval": 0
+  },
+
+  // Hyprland shortcuts helper
+  "custom/shortcuts": {
+    "format": "",
+    "tooltip": true,
+    "tooltip-format": "Cheat Sheet:\nSuper+E  Nautilus\nSuper+F  Toggle fullscreen\nSuper+J  Toggle split\nSuper+K  Close window\nSuper+L  Lock (hyprlock)\nSuper+P  Pseudo-tile\nSuper+R  App menu (wofi)\nSuper+S  Toggle scratchpad\nSuper+T  Terminal\nSuper+Space  Launcher (hyprlauncher)\nSuper+Arrows  Move focus\nSuper+1-0  Switch workspace\nSuper+Shift+1-0  Move window to workspace\nSuper+Shift+S  Screenshot (region, hyprshot)",
+    "interval": 0
+  },
+
+  // Power button: left-click lock, right-click shutdown
+  "custom/power": {
+    "format": "",
+    "tooltip": "Left: Lock  Right: Shutdown",
+    "on-click": "hyprlock",
+    "on-click-right": "systemctl poweroff",
+    "interval": 0
+  },
+
+  // Audio volume
+  "pulseaudio": {
+    "format": "  {volume}%",
+    "format-bluetooth": "  {volume}%",
+    "format-muted": "  muted",
+    "scroll-step": 1
+  },
+
+  // System tray (for nm-applet, etc.)
+  "tray": {
+    "icon-size": 16,
+    "spacing": 6,
+    "ignore-list": ["steam", "steam.desktop", "steamwebhelper"]
+  }
+}
