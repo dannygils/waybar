@@ -4,7 +4,7 @@
   "height": 32,
 
   "modules-left": ["hyprland/workspaces", "hyprland/window", "hyprland/submap"],
-  "modules-center": ["custom/shortcuts", "clock", "custom/firefox", "custom/steam", "custom/plex", "custom/signal", "custom/openvscode-server", "custom/gnome-text-editor", "custom/warp-terminal"],
+  "modules-center": ["custom/shortcuts", "clock", "custom/firefox", "custom/steam", "custom/plex", "custom/signal", "custom/code", "custom/gnome-text-editor", "custom/warp-terminal"],
   "modules-right": ["pulseaudio", "network", "custom/power", "tray"],
 
   // Workspaces from Hyprland
@@ -72,10 +72,10 @@
     "interval": 0
   },
 
-  "custom/openvscode-server": {
+  "custom/code": {
     "format": "",
     "tooltip": "VSCode",
-    "on-click": "openvscode-server",
+    "on-click": "code",
     "interval": 0
   },
 

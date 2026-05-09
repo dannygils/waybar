@@ -60,7 +60,7 @@ window#waybar {
 #custom-steam,
 #custom-plex,
 #custom-signal,
-#custom-openvscode-server,
+#custom-code,
 #custom-gnome-text-editor,
 #custom-warp-terminal,
 #custom-shortcuts,
@@ -115,7 +115,7 @@ window#waybar {
   color: #b48ead;
 }
 
-#custom-openvscode-server {
+#custom-code {
   color: #327da8;
 }
 
