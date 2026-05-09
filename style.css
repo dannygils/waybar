@@ -60,6 +60,9 @@ window#waybar {
 #custom-steam,
 #custom-plex,
 #custom-signal,
+#custom-openvscode-server,
+#custom-gnome-text-editor,
+#custom-warp-terminal,
 #custom-shortcuts,
 #tray {
   margin: 0 4px;
@@ -97,7 +100,7 @@ window#waybar {
 }
 
 #custom-signal {
-  color: #4fd1c5;
+  color: #4c4fed;
 }
 
 #pulseaudio {
@@ -112,3 +115,14 @@ window#waybar {
   color: #b48ead;
 }
 
+#custom-openvscode-server {
+  color: #327da8;
+}
+
+#custom-gnome-text-editor {
+  color: #596b75;
+}
+
+#custom-warp-terminal {
+  color: #9900ff;
+}

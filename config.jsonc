@@ -4,7 +4,7 @@
   "height": 32,
 
   "modules-left": ["hyprland/workspaces", "hyprland/window", "hyprland/submap"],
-  "modules-center": ["custom/shortcuts", "clock", "custom/firefox", "custom/steam", "custom/plex", "custom/signal"],
+  "modules-center": ["custom/shortcuts", "clock", "custom/firefox", "custom/steam", "custom/plex", "custom/signal", "custom/openvscode-server", "custom/gnome-text-editor", "custom/warp-terminal"],
   "modules-right": ["pulseaudio", "network", "custom/power", "tray"],
 
   // Workspaces from Hyprland
@@ -69,6 +69,27 @@
     "format": "󰵅",
     "tooltip": "Signal",
     "on-click": "signal-desktop --password-store=\"gnome-libsecret\"",
+    "interval": 0
+  },
+
+  "custom/openvscode-server": {
+    "format": "",
+    "tooltip": "VSCode",
+    "on-click": "openvscode-server",
+    "interval": 0
+  },
+
+  "custom/gnome-text-editor": {
+    "format": "",
+    "tooltip": "Text Editor",
+    "on-click": "gnome-text-editor",
+    "interval": 0
+  },
+
+  "custom/warp-terminal": {
+    "format": "",
+    "tooltip": "Warp Terminal",
+    "on-click": "warp-terminal",
     "interval": 0
   },
 
