@@ -44,7 +44,7 @@
     "on-click-right": "nmcli networking | grep -q enabled && nmcli networking off || nmcli networking on"
   },
 
-  // App launchers
+  // App launchers https://www.nerdfonts.com/cheat-sheet 
   "custom/firefox": {
     "format": "",
     "tooltip": "Firefox",
