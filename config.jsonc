@@ -39,8 +39,9 @@
     "format": "{ifname}",
     "format-ethernet": "  {ifname}  {bandwidthDownBytes}  {bandwidthUpBytes}",
     "format-wifi": "  {essid}  {bandwidthDownBytes}  {bandwidthUpBytes}",
-    "format-disconnected": "  offline",
-    "max-length": 60
+    "format-disconnected": "  offline",
+    "max-length": 60,
+    "on-click-right": "nmcli networking | grep -q enabled && nmcli networking off || nmcli networking on"
   },
 
   // App launchers
