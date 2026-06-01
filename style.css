@@ -63,6 +63,8 @@ window#waybar {
 #custom-code,
 #custom-gnome-text-editor,
 #custom-warp-terminal,
+#custom-audacity,
+#custom-obs-studio,
 #custom-shortcuts,
 #tray {
   margin: 0 4px;
@@ -125,4 +127,12 @@ window#waybar {
 
 #custom-warp-terminal {
   color: #9900ff;
+}
+
+#custom-audacity {
+  color: #5dca8e;
+}
+
+#custom-obs-studio {
+  color: #d4d4d4;
 }

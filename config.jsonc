@@ -4,7 +4,7 @@
   "height": 32,
 
   "modules-left": ["hyprland/workspaces", "hyprland/window", "hyprland/submap"],
-  "modules-center": ["custom/shortcuts", "clock", "custom/firefox", "custom/steam", "custom/plex", "custom/signal", "custom/code", "custom/gnome-text-editor", "custom/warp-terminal"],
+  "modules-center": ["custom/shortcuts", "clock", "custom/firefox", "custom/steam", "custom/plex", "custom/signal", "custom/code", "custom/gnome-text-editor", "custom/warp-terminal", "custom/audacity", "custom/obs-studio"],
   "modules-right": ["pulseaudio", "network", "custom/power", "tray"],
 
   // Workspaces from Hyprland
@@ -88,9 +88,23 @@
   },
 
   "custom/warp-terminal": {
-    "format": "",
+    "format": "",
     "tooltip": "Warp Terminal",
     "on-click": "warp-terminal",
+    "interval": 0
+  },
+
+  "custom/audacity": {
+    "format": "",
+    "tooltip": "Audacity",
+    "on-click": "audacity",
+    "interval": 0
+  },
+
+  "custom/obs-studio": {
+    "format": "󰄄",
+    "tooltip": "OBS Studio",
+    "on-click": "obs",
     "interval": 0
   },
 
@@ -114,12 +128,14 @@
   // Audio volume
   "pulseaudio": {
     "format": "  {volume}%",
-    "format-bluetooth": "  {volume}%",
-    "format-muted": "  muted",
-    "scroll-step": 1
+    "format-bluetooth": "󰥰  {volume}%",
+    "format-muted": "󰝟  muted",
+    "scroll-step": 1,
+    "on-click": "pwvucontrol",
+    "on-click-right": "wpctl set-mute @DEFAULT_AUDIO_SINK@ toggle"
   },
 
-  // System tray (for nm-applet, etc.)
+  // System tray
   "tray": {
     "icon-size": 16,
     "spacing": 6,
