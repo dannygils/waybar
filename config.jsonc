@@ -88,7 +88,7 @@
   },
 
   "custom/warp-terminal": {
-    "format": "",
+    "format": "",
     "tooltip": "Warp Terminal",
     "on-click": "warp-terminal",
     "interval": 0
