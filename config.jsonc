@@ -67,7 +67,7 @@
   },
 
   "custom/signal": {
-    "format": "󰵅",
+    "format": "",
     "tooltip": "Signal",
     "on-click": "signal-desktop --password-store=\"gnome-libsecret\"",
     "interval": 0
